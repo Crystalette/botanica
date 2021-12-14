@@ -30,9 +30,6 @@ body {
     &__list {
         display: none;
         list-style: none;
-        padding: 0;
-        margin: 0;
-        background-color: $primary-background-color;
     }
 
     &__link {
@@ -40,6 +37,7 @@ body {
         padding: 5px;
         text-decoration: none;
         color: $text-color;
+        text-align: center;
     }
 
     &__toggler {
@@ -57,21 +55,17 @@ body {
     &__logo {
         grid-column: 1 / 2 ;
         grid-row: 1 / 2 ;
-        max-width: 150px;
+        max-width: 70px;
         width: 100%;
+        margin: 10px
     }
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 100px 1fr;
 }
-
-a:hover {
-    background-color: $hover-color;
-}
-
 
 .footer {
     display: grid;
@@ -97,7 +91,11 @@ a:hover {
         grid-column: 1 / -1 ;
         grid-row: 2 / 3 ;
         justify-self: center;
+        margin: 0;
+        padding: 0;
     }
+
+
 }
 
 

@@ -23,15 +23,13 @@ body {
 .menu__list {
   display: none;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: white;
 }
 .menu__link {
   display: block;
   padding: 5px;
   text-decoration: none;
   color: #0D2818;
+  text-align: center;
 }
 .menu__toggler {
   grid-column: 2/3;
@@ -46,18 +44,15 @@ body {
 .header__logo {
   grid-column: 1/2;
   grid-row: 1/2;
-  max-width: 150px;
+  max-width: 70px;
   width: 100%;
+  margin: 10px;
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 150px 1fr;
-}
-
-a:hover {
-  background-color: #5eb860;
+  grid-template-rows: 100px 1fr;
 }
 
 .footer {
@@ -72,6 +67,8 @@ a:hover {
     grid-column: 1/-1;
     grid-row: 2/3;
     justify-self: center;
+    margin: 0;
+    padding: 0;
   }
 }
 @media screen and (min-width: 640px) {
