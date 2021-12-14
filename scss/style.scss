@@ -1,0 +1,114 @@
+$text-color: #0D2818;
+$primary-background-color: white;
+$carrot-orange: #EC9832;
+$may-green: #618B4A; 
+$hover-color: #5eb860;
+
+* { box-sizing: border-box; }
+
+body {
+    background-color: $primary-background-color;
+    color: $text-color;
+}
+
+.container {
+    max-width: 639px;
+    margin: auto;
+    border: 2px solid black; // pak smazat
+}
+
+.menu {
+    list-style: none;
+    
+    &__checkbox {
+        position: absolute;
+        left: -9999px;
+        // pro checkbox je toto stejne jako display: none;
+        // ale nektere prohlizece by mohly pote checkbox ignorovat; takto zustane zachovana funkcionalita
+    }
+
+    &__list {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: $primary-background-color;
+    }
+
+    &__link {
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        color: $text-color;
+    }
+
+    &__toggler {
+        grid-column: 2 / 3 ;
+        grid-row: 1 / 2 ;
+        justify-self: end;
+        cursor: pointer;
+        font-size: 30px;
+        font-weight: bold;
+        padding-right: 13px;
+    }
+}
+
+.header {
+    &__logo {
+        grid-column: 1 / 2 ;
+        grid-row: 1 / 2 ;
+        max-width: 150px;
+        width: 100%;
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 1fr;
+}
+
+a:hover {
+    background-color: $hover-color;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+
+
+
+
+
+
+
+
+
+// zde zacina media screen
+
+@media screen and (max-width: 639px) {
+
+    .menu__checkbox:checked ~ .menu__list {
+        display: block;
+        grid-column: 1 / -1 ;
+        grid-row: 2 / 3 ;
+        justify-self: center;
+    }
+}
+
+
+@media screen and (min-width: 640px) {
+
+    .menu__toggler {
+        display: none;
+    }
+
+    .menu__list {
+        display: flex;
+    }
+}
+
