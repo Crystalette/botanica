@@ -9,12 +9,12 @@ $hover-color: #5eb860;
 body {
     background-color: $primary-background-color;
     color: $text-color;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
     max-width: 639px;
     margin: auto;
-    border: 2px solid black; // pak smazat
 }
 
 .menu {
@@ -61,6 +61,15 @@ body {
     }
 }
 
+.image-main {
+    max-width: 100%;
+    margin: auto;
+}
+
+.about {
+    text-align: center;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -68,21 +77,80 @@ body {
 }
 
 .footer {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, auto);
+    border-top: 1px solid $may-green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    margin-top: 20px;
+
+    &__opening--all {
+        display: flex;
+    }
+
+    &__contact {
+        min-width: 0;
+
+        p,
+        a {
+            text-align: center;
+            height: 2rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    div {
+        padding: 10px;
+        text-align: center;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+// kod pro menu
+
+.alacarte {
+    background-color: $may-green;
+    padding: 20px;
+
+    &__h1 {
+        text-align: right;
+        position: relative;
+        bottom: 100px;
+    }
+
+    &__description, &__h2 {
+        overflow: auto;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 
+// zde zacina media query
 
+@media screen and (max-width: 230px) {
+    .footer__opening--all {
+        flex-direction: column;
+    }
 
+    .alacarte__h1 {
+        position: static;
+        text-align: center;
+        overflow: auto;
+    }
+}
 
-
-
-
-
-
-// zde zacina media screen
 
 @media screen and (max-width: 639px) {
 
