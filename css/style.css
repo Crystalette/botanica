@@ -30,6 +30,7 @@ body {
   text-decoration: none;
   color: #0D2818;
   text-align: center;
+  width: 100%;
 }
 .menu__toggler {
   grid-column: 2/3;
@@ -117,6 +118,22 @@ body {
 .alacarte p {
   margin: 0;
   padding: 0;
+}
+
+.catering__photo {
+  width: 100%;
+}
+
+.gallery {
+  display: grid;
+  grid-auto-flow: column dense;
+  grid-template-rows: repeat(5, 1fr);
+  grid-auto-columns: 1fr;
+  gap: 20px;
+  margin: 20px;
+}
+.gallery__photo {
+  width: 100%;
 }
 
 @media screen and (max-width: 230px) {
