@@ -46,7 +46,6 @@ body {
         justify-self: end;
         cursor: pointer;
         font-size: 30px;
-        font-weight: bold;
         padding-right: 13px;
     }
 }
@@ -119,11 +118,19 @@ body {
 .alacarte {
     background-color: $may-green;
     padding: 20px;
+    margin-bottom: 35px;
 
     &__h1 {
         text-align: right;
         position: relative;
-        bottom: 100px;
+        bottom: 75px;
+        font-size: 45px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    &__h2 {
+        margin-top: 0px;
     }
 
     &__description, &__h2 {
@@ -135,6 +142,8 @@ body {
         padding: 0;
     }
 }
+
+// kod pro catering
 
 
 // zde zacina media query

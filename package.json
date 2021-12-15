@@ -1,7 +1,6 @@
 {
   "name": "zavreceny-projekt",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "serve": "npx @11ty/eleventy --serve",
@@ -12,5 +11,14 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crystalette/miniature-eureka.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Crystalette/miniature-eureka/issues"
+  },
+  "homepage": "https://github.com/Crystalette/miniature-eureka#readme",
+  "description": ""
 }

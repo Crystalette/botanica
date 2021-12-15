@@ -37,7 +37,6 @@ body {
   justify-self: end;
   cursor: pointer;
   font-size: 30px;
-  font-weight: bold;
   padding-right: 13px;
 }
 
@@ -99,11 +98,18 @@ body {
 .alacarte {
   background-color: #618B4A;
   padding: 20px;
+  margin-bottom: 35px;
 }
 .alacarte__h1 {
   text-align: right;
   position: relative;
-  bottom: 100px;
+  bottom: 75px;
+  font-size: 45px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+.alacarte__h2 {
+  margin-top: 0px;
 }
 .alacarte__description, .alacarte__h2 {
   overflow: auto;
