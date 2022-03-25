@@ -121,11 +121,12 @@ body {
 // kod pro menu
 
 .alacarte {
-    background-color: $may-green;
+    background-color: #FDEBD8;
     padding: 20px;
     margin-bottom: 35px;
 
     &__h1 {
+        color: #70161e;
         text-align: right;
         position: relative;
         bottom: 75px;
@@ -136,10 +137,23 @@ body {
 
     &__h2 {
         margin-top: 0px;
+        margin-bottom: 35px;
     }
 
     &__description, &__h2 {
         overflow: auto;
+    }
+
+    &__h3 {
+        margin-bottom: 5px;
+    }
+
+    &__h4 {
+        margin-bottom: 5px;
+    }
+
+    &__price {
+        text-align: right;
     }
 
     p {
@@ -148,6 +162,9 @@ body {
     }
 }
 
+.menu-items {
+
+}
 // kod pro catering
 
 .catering {
@@ -171,6 +188,14 @@ body {
     }
 }
 
+.fa-brands {
+    color: $text-color;
+    font-size: 25px;
+}
+
+.fa-instagram {
+    margin-left: 25px;
+}
 
 @media screen and (max-width: 230px) {
     .footer__opening--all {

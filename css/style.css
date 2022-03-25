@@ -100,11 +100,12 @@ body {
 }
 
 .alacarte {
-  background-color: #618B4A;
+  background-color: #FDEBD8;
   padding: 20px;
   margin-bottom: 35px;
 }
 .alacarte__h1 {
+  color: #70161e;
   text-align: right;
   position: relative;
   bottom: 75px;
@@ -114,9 +115,19 @@ body {
 }
 .alacarte__h2 {
   margin-top: 0px;
+  margin-bottom: 35px;
 }
 .alacarte__description, .alacarte__h2 {
   overflow: auto;
+}
+.alacarte__h3 {
+  margin-bottom: 5px;
+}
+.alacarte__h4 {
+  margin-bottom: 5px;
+}
+.alacarte__price {
+  text-align: right;
 }
 .alacarte p {
   margin: 0;
@@ -137,6 +148,15 @@ body {
 }
 .gallery__photo {
   width: 100%;
+}
+
+.fa-brands {
+  color: #0D2818;
+  font-size: 25px;
+}
+
+.fa-instagram {
+  margin-left: 25px;
 }
 
 @media screen and (max-width: 230px) {
