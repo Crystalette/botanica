@@ -134,6 +134,12 @@ body {
   padding: 0;
 }
 
+.drinks-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+}
+
 .catering__photo {
   width: 100%;
 }
