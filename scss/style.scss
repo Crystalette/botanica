@@ -121,7 +121,7 @@ body {
 // kod pro menu
 
 .alacarte {
-    background-color: #FDEBD8;
+    border: 1px solid black;
     padding: 20px;
     margin-bottom: 35px;
 
@@ -168,13 +168,17 @@ body {
     grid-auto-rows: 1fr;
 }
 
-
 // kod pro catering
 
 .catering {
     &__photo {
         width: 100%;
     }
+
+    p, h3 {
+        text-align: center;
+    }
+
 }
 
 // kod pro galerii

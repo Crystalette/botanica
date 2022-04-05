@@ -100,7 +100,7 @@ body {
 }
 
 .alacarte {
-  background-color: #FDEBD8;
+  border: 1px solid black;
   padding: 20px;
   margin-bottom: 35px;
 }
@@ -142,6 +142,9 @@ body {
 
 .catering__photo {
   width: 100%;
+}
+.catering p, .catering h3 {
+  text-align: center;
 }
 
 .gallery {
