@@ -181,6 +181,37 @@ body {
 
 }
 
+// kod pro kontakt
+
+.gmap_canvas {
+    overflow:hidden;
+    height:400px;
+    width:100%;
+}
+
+.mapouter {
+    position:relative;
+    text-align:center;
+    height:400px;
+    width:100%;
+}
+
+iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 500px;
+}
+
+
+// kod pro kurzy
+
+.courses {
+
+    p, h4 {
+        text-align: center;
+    }
+}
+
 // kod pro galerii
 
 .gallery {
@@ -255,7 +286,7 @@ body {
         display: block;
         width: 40px;
         height: 1px;
-        background-color: $text-color;
+        background-color: $may-green;
     }
 }
 

@@ -147,6 +147,29 @@ body {
   text-align: center;
 }
 
+.gmap_canvas {
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+}
+
+.mapouter {
+  position: relative;
+  text-align: center;
+  height: 400px;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+}
+
+.courses p, .courses h4 {
+  text-align: center;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -206,7 +229,7 @@ body {
     display: block;
     width: 40px;
     height: 1px;
-    background-color: #0D2818;
+    background-color: #618B4A;
   }
 
   .main ~ .menu__item {
